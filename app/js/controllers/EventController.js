@@ -2,6 +2,7 @@
 
 eventsApp.controller('EventsController',
     function EventController($scope){
+        $scope.sortorder = 'name';
         $scope.snippet = '<span style="color:red">tester sdfdsfsf</span>';
         $scope.boolValue = false;
         $scope.myStyle = {color:"red"};
@@ -14,39 +15,39 @@ eventsApp.controller('EventsController',
             location:{
                 address:'8 madang ave',
                 city:'whalan',
-                state:'nsw'
+                province:'nsw'
             },
             imgUrl:'https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Milwaukee_Bucks.svg/749px-Milwaukee_Bucks.svg.png',
             sessions:[
                 {
-                    name:'doloribus eius error eveniet 101',
+                    name:'zzdoloribus eius error eveniet 101',
                     creatorName:'wil martinez',
-                    duration:'1 hour',
-                    level:'advanced',
+                    duration:1,
+                    level:'Advanced',
                     upVoteCount:0,
                     abstract:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, cumque, iusto. Cumque dolorem doloribus eius error eveniet, exercitationem libero maiores, molestiae mollitia natus nihil placeat recusandae tenetur ullam unde veniam.',
                 },
                 {
-                    name:'doloribus eius error eveniet clean',
+                    name:'Advanced oloribus eius error eveniet clean',
                     creatorName:'wil martinez',
-                    duration:'1 hour',
-                    level:'advanced',
+                    duration:1,
+                    level:'Beginner',
                     upVoteCount:0,
                     abstract:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, cumque, iusto. Cumque dolorem doloribus eius error eveniet, exercitationem libero maiores, molestiae mollitia natus nihil placeat recusandae tenetur ullam unde veniam.'
                 },
                 {
                     name:'doloribus eius error eveniet alternatives',
                     creatorName:'wil martinez',
-                    duration:'1 hour',
-                    level:'advanced',
+                    duration:3,
+                    level:'Intermediate',
                     upVoteCount:0,
                     abstract:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, cumque, iusto. Cumque dolorem doloribus eius error eveniet, exercitationem libero maiores, molestiae mollitia natus nihil placeat recusandae tenetur ullam unde veniam.'
                 },
                 {
                     name:'holding it in',
                     creatorName:'wil martinez',
-                    duration:'1 hour',
-                    level:'advanced',
+                    duration:4,
+                    level:'Advanced',
                     upVoteCount:0,
                     abstract:'doloribus eius error eveniet doloribus eius error eveniet'
                 }
