@@ -1,0 +1,70 @@
+<div class="row">
+    <div class="container">
+        <div class="row col-lg-6 col-lg-offset-3">
+            <h2>{{cevent.name}}</h2>
+
+            <button type="button" class="btn btn-info" ng-click="saveEventCookie(cevent)">Store Cookie</button>
+            <button type="button" class="btn btn-info" ng-click="getEventCookie(cevent)">Get Cookie</button>
+            <button type="button" class="btn btn-info" ng-click="removeEventCookie(cevent)">Remove Cookie</button>
+        </div>
+    </div>
+
+    <div class="row"><h1 class="text-primary">{{sname}}</h1>
+        <button type="button" ng-click="cancelT()" class="btn btn-danger">Cancel</button>
+    </div>
+    <div class="row">{{myDate | date:myFormat}}</div>
+    <div class="row">{{test}}</div>
+    <div class="conatiner">
+        <h1>blah</h1>
+        <hr/>
+        <form name="newEventForm" novalidate>
+            <fieldset>
+                <label for="eventName">Event Name</label>
+                <input id="eventName" type="text" placeholder="Name of event" ng-model="event.name" required/>
+                <label for="eventDate">Event Date</label>
+                <input id="eventDate" type="text" placeholder="format (mm/dd/yyyy)" ng-model="event.date" required
+                       ng-pattern="/^((\d{4})-(\d{2})-(\d{2})|(\d{2})\/(\d{2})\/(\d{4}))$/"/>
+                <label for="eventTime">Event Time</label>
+                <input id="eventTime" type="text" placeholder="start and end time" ng-model="event.time" required/>
+                <label for="eventLocation">Event Location</label>
+                <input id="eventLocation" type="text" placeholder="address of event" ng-model="event.address" required/>
+                <br/>
+                <input id="eventCity" type="text" placeholder="City" ng-model="event.city"/>
+                <input id="eventProvince" type="text" placeholder="Province" ng-model="event.province" required/>
+
+                <div class="col-lg-12">
+                    <label for="eventImageUrl" class="col-lg-1">Image</label>
+                    <input id="eventImageUrl" type="url" placeholder="url of image" class="col-lg-10"
+                           ng-model="event.imageUrl" required/>
+                </div>
+            </fieldset>
+            <img ng-src="{{event.imageUrl}}" alt=""/>
+            <br/><br/>
+            <button type="submit" class="btn btn-primary" ng-click="saveEvent(event,newEventForm)"
+                    ng-disabled="newEventForm.$invalid">Save
+            </button>
+            <button type="button" class="btn btn-default" ng-click="cancelEdit()">Cancel</button>
+        </form>
+    </div>
+    <div class="row">
+        key: <input type="text" ng-model="key"/><br/>
+        value: <input type="text" ng-model="value"/><br/>
+        <button type="button" class="btn btn-info" ng-click="addToCache(key,value)">Add to Cache</button>
+        <br/>
+        <br/>
+        <input type="text" ng-model="keyToRead"/><br/>
+
+        <h3>Value from cache: {{readFromCache(keyToRead)}}</h3>
+
+        <h3>Cache Stats: {{getCacheStats()}}</h3>
+    </div>
+    <div class="row">
+        <div id="appendHere"></div>
+        <br/>
+        name: <input type="text" ng-model="name"/><br/>
+        value: <input type="text" ng-model="markup"/><br/>
+        <button type="button" class="btn btn-info" ng-click="appendDivToElement()">Append</button>
+    </div>
+</div>
+
+

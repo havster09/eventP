@@ -1,0 +1,48 @@
+{   "id": 1,
+    "name": "deeeeeeeeeeeeeeeez nuts",
+    "date": "10/11/12",
+    "time": "10pm",
+    "location": {
+        "address": "8 madang ave",
+        "city": "whalan",
+        "province": "nsw"
+    },
+    "imgUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Milwaukee_Bucks.svg/749px-Milwaukee_Bucks.svg.png",
+    "sessions": [
+        {
+            "id":1,
+            "name": "zzdoloribus eius error eveniet 101",
+            "creatorName": "wil martinez",
+            "duration": 1,
+            "level": "Advanced",
+            "upVoteCount": 0,
+            "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, cumque, iusto. Cumque dolorem doloribus eius error eveniet, exercitationem libero maiores, molestiae mollitia natus nihil placeat recusandae tenetur ullam unde veniam."
+        },
+        {
+            "id":2,
+            "name": "Advanced oloribus eius error eveniet clean",
+            "creatorName": "wil martinez",
+            "duration": 1,
+            "level": "Beginner",
+            "upVoteCount": 0,
+            "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, cumque, iusto. Cumque dolorem doloribus eius error eveniet, exercitationem libero maiores, molestiae mollitia natus nihil placeat recusandae tenetur ullam unde veniam."
+        },
+        {
+            "id":3,
+            "name": "doloribus eius error eveniet alternatives",
+            "creatorName": "wil martinez",
+            "duration": 3,
+            "level": "Intermediate",
+            "upVoteCount": 0,
+            "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, cumque, iusto. Cumque dolorem doloribus eius error eveniet, exercitationem libero maiores, molestiae mollitia natus nihil placeat recusandae tenetur ullam unde veniam."
+        },
+        {
+            "id":4,
+            "name": "holding it in",
+            "creatorName": "wil martinez",
+            "duration": 4,
+            "level": "Advanced",
+            "upVoteCount": 0,
+            "abstract": "doloribus eius error eveniet doloribus eius error eveniet"
+        }
+    ]}
