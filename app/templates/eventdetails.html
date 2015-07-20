@@ -56,9 +56,8 @@
         <ul class="list-unstyled">
             <li ng-repeat="session in event.sessions | orderBy:sortorder | limitTo:4 | filter:query" id="session{{session.duration}}">
                 <div class="col-lg-2 votingWidget">
-                    <vote upvote-method="voteUpSession(session)" downvote-method="voteDownSession(session)" count-var="{{session.upVoteCount}}"></vote>
+                    <vote mupvote="voteUpSession(session)" mdownvote="voteDownSession(session)" vcount="{{session.upVoteCount}}"></vote>
                 </div>
-
                 <session-thumbnail data="session"></session-thumbnail>
             </li>
 

@@ -30,9 +30,9 @@ angular.module("eventsApp").directive("vote",function(){
         restrict:"E",
         templateUrl:"templates/directives/vote.html",
         scope:{
-            upvoteMethod:"&",
-            downvoteMethod:"&",
-            countVar:"@"
+            vcount:"@",
+            mupvote:"&",
+            mdownvote:"&"
             //isolate the scope | pass controller methods and vars in as the ATTRIBUTES specified on local scope object
         },
         link:function(scope,el,attrs,controller){
