@@ -34,6 +34,7 @@ angular.module("eventsApp").directive("vote",function(){
             mupvote:"&",
             mdownvote:"&"
             //isolate the scope | pass controller methods and vars in as the ATTRIBUTES specified on local scope object
+            //set mapped key in directive template and set controller method/var in the directive attrs
         },
         link:function(scope,el,attrs,controller){
             console.log(scope);
