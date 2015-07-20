@@ -1,4 +1,4 @@
-eventsApp.controller("SessionController",function($scope,eventDataR,$routeParams,$route){
+angular.module("eventsApp").controller("SessionController",function($scope,eventDataR,$routeParams,$route){
 
     $scope.params = $routeParams;
 

@@ -1,6 +1,6 @@
 "use strict";
 
-eventsApp.controller('EditEventController',function EditEventController($scope,eventDataR,myCache,$compile,$parse,$locale,$timeout,$filter,$cookieStore,$location){
+angular.module("eventsApp").controller('EditEventController',function EditEventController($scope,eventDataR,myCache,$compile,$parse,$locale,$timeout,$filter,$cookieStore,$location){
     $scope.cevent = {id:1,name:"juwon howard"};
 
     $scope.saveEventCookie = function(cevent){

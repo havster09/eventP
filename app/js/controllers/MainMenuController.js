@@ -1,6 +1,6 @@
 "use strict";
 
-eventsApp.controller("MainMenuController",function($scope,$location){
+angular.module("eventsApp").controller("MainMenuController",function($scope,$location){
     console.log('absUrl',$location.absUrl());
     console.log('protocol',$location.protocol());
     console.log('port',$location.port());

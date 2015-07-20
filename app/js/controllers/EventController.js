@@ -1,6 +1,6 @@
 'use strict';
 
-eventsApp.controller('EventController',
+angular.module("eventsApp").controller('EventController',
     function EventController($scope,eventData,eventDataR,$anchorScroll){
         $scope.sortorder = 'name';
         $scope.snippet = '<span style="color:red">tester sdfdsfsf</span>';
@@ -32,9 +32,9 @@ eventsApp.controller('EventController',
         $scope.voteUpSession = function(session){
             session.upVoteCount++;
         }
-        $scope.voteDownSession = function(index){
-            if($scope.event.sessions[index].upVoteCount > 0)
-                $scope.event.sessions[index].upVoteCount--;
+        $scope.voteDownSession = function(session){
+            if(session.upVoteCount > 0)
+                session.upVoteCount--;
         }
         $scope.scrollToSession = function(){
             $anchorScroll()

@@ -1,6 +1,6 @@
 'use strict';
 
-var eventsApp = angular.module('eventsApp',['ngSanitize','ngResource','ngCookies','ngRoute'])
+angular.module('eventsApp',['ngSanitize','ngResource','ngCookies','ngRoute'])
     .config(function($routeProvider,$locationProvider){
         $routeProvider
             .when("/",
@@ -23,6 +23,10 @@ var eventsApp = angular.module('eventsApp',['ngSanitize','ngResource','ngCookies
                 foo:"bar",
                 templateUrl:"templates/session.html",
                 controller:"SessionController"
+            })
+            .when("/sampledirectives",{
+                templateUrl:"templates/SampleDirective.html",
+                controller:"SampleDirectiveController"
             })
             .otherwise({
                 //redirectTo:"/"

@@ -1,16 +1,16 @@
 "use strict";
 
-/*eventsApp.factory("$exceptionHandler",function(){
+/*angular.module("eventsApp").factory("$exceptionHandler",function(){
     return function(exception){
         console.log("exception handled: "+exception.message);
     }
 });*/
 
-eventsApp.factory('myCache',function($cacheFactory){
+angular.module("eventsApp").factory('myCache',function($cacheFactory){
     return $cacheFactory('myCache',{capacity:3});
 });
 
-eventsApp.factory('eventDataR', function ($resource, $log, $q) {
+angular.module("eventsApp").factory('eventDataR', function ($resource, $log, $q) {
     var resource = $resource("1r.json", {id: "@id"});
     return{
         getEvent: function () {
@@ -44,7 +44,7 @@ eventsApp.factory('eventDataR', function ($resource, $log, $q) {
 });
 
 
-eventsApp.factory("eventData",function($http,$q,$log){
+angular.module("eventsApp").factory("eventData",function($http,$q,$log){
     return{
         getEvent:function(){
             var deferred = $q.defer();
