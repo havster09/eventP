@@ -1,5 +1,8 @@
 <div class="row">
     <div class="container">
+        <greeting ctrl="greetingCtrl">
+            <div spanish tagalog></div>
+        </greeting>
         <div class="row col-lg-6 col-lg-offset-3">
             <h2>{{cevent.name}}</h2>
 
@@ -17,13 +20,14 @@
     <div class="conatiner">
         <h1>blah</h1>
         <hr/>
+
         <form name="newEventForm" novalidate>
             <fieldset>
                 <label for="eventName">Event Name</label>
                 <input id="eventName" type="text" placeholder="Name of event" ng-model="event.name" required/>
                 <label for="eventDate">Event Date</label>
                 <input id="eventDate" type="text" placeholder="format (mm/dd/yyyy)" ng-model="event.date" required
-                       ng-pattern="/^((\d{4})-(\d{2})-(\d{2})|(\d{2})\/(\d{2})\/(\d{4}))$/"/>
+                       mybday/>
                 <label for="eventTime">Event Time</label>
                 <input id="eventTime" type="text" placeholder="start and end time" ng-model="event.time" required/>
                 <label for="eventLocation">Event Location</label>
